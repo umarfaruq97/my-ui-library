@@ -1,0 +1,39 @@
+# Ignore build tools and configuration files
+node_modules
+.vscode
+.idea
+.env
+.env.local
+*.log
+*.lock
+*.tsbuildinfo
+.DS_Store
+
+# Ignore source files
+src/
+tests/
+__tests__/
+coverage/
+storybook-static/
+
+# Ignore Vite-related files
+# dist/
+public/
+
+# Ignore miscellaneous files
+.npmignore
+.gitignore
+.eslintignore
+.eslintrc*
+.prettierrc*
+.prettierignore
+tsconfig*.json
+vite.config.*
+
+# Allow the dist folder
+!dist/
+
+# Allow README.md, LICENSE, and package.json
+!README.md
+!LICENSE
+!package.json

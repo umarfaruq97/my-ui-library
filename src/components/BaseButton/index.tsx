@@ -11,12 +11,12 @@
  */
 export interface BaseButtonProps {
   label: string;
-  icon: string;
-  iconPlacement: string;
-  size: string;
-  onClick: () => void;
-  className: string;
-  disabled: boolean;
+  icon?: string;
+  iconPlacement?: string;
+  size?: string;
+  onClick?: () => void;
+  className?: string;
+  disabled?: boolean;
 }
 export default function BaseButton({
   label = '',

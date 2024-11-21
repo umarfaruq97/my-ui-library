@@ -20,16 +20,16 @@ import { useDebounce } from 'use-debounce';
 import { onlyAlphanumeric } from '../../utils';
 
 export interface InputSearchProps {
-  className: string;
-  label: string;
+  className?: string;
+  label?: string;
   value: any;
-  onBlur: () => void;
+  onBlur?: () => void;
   onChange: (val: any) => any;
-  onFocus: () => void;
-  placeholder: string;
-  required: boolean;
-  debounce: number;
-  disabled: boolean;
+  onFocus?: () => void;
+  placeholder?: string;
+  required?: boolean;
+  debounce?: number;
+  disabled?: boolean;
 }
 export default function InputSearch({
   className = '',

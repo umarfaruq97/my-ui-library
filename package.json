@@ -1,22 +1,22 @@
 {
-  "name": "my-ui-library",
-  "private": true,
-  "version": "0.0.0",
+  "name": "ufb-my-ui-library",
+  "version": "0.6.0",
   "type": "module",
-  "main": "dist/my-library-ui.umd.ts",
-  "module": "dist/my-library-ui.es.ts",
+  "main": "dist/my-ui-library.umd.js",
+  "module": "dist/my-ui-library.es.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc --project tsconfig.app.json && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
@@ -30,6 +30,7 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
     "postcss": "^8.4.49",
+    "rollup-plugin-typescript2": "^0.36.0",
     "tailwindcss": "^3.4.15",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.11.0",
